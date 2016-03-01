@@ -1,0 +1,41 @@
+
+.mr-button {
+	color: #000;
+	text-align: center;
+	border-radius: 4%;
+	border: 5px solid #fff;
+}
+
+.mr-button--colored {
+	color: #fff;
+	background-color: #000;
+	line-height: 32px;
+}
+
+.mr-button--primary {
+	color: #fff;
+	background-color: #cf0d0d;
+	line-height: 32px;
+}
+
+.mr-button--fab {
+	background-color: #cccccc;
+	color: #fff;
+    vertical-align: middle;
+    border: 1px solid lightgrey;
+    height: 34px;
+    margin: auto;
+    min-width: 34px;
+    width: 34px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.mr-button--minor {
+	color: #444;
+	border: 1px solid white;
+	font-size: 12px;
+	background-color: #eee;
+	padding: 5px 0;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="myRetail">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>myRetail</title>
+		<!-- inject:css -->
+		<!-- endinject -->
+		<link rel="stylesheet" href="./src/assets/css/main.css">
+		<link rel="stylesheet" href="./src/assets/css/animation.css">
+	</head>
+
+	<body>
+		<div ng-include="'src/app/shared/header/header.html'"></div>
+
+		<div class="container">
+			<div ui-view="mainView"></div>
+		</div>
+		
+		<div ng-include="'src/app/shared/footer/footer.html'"></div>
+
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+		<!-- angular-->
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-animate/angular-animate.js"></script>
+		<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		
+
+		<script src="src/app/app.js"></script>
+		<script src="src/app/home/promo-products/promo-products-model.js"></script>
+		<script src="src/app/home/promo-products/promo-products.js"></script>
+		<script src="src/app/pdp/pdp.js"></script>
+		<script src="src/app/pdp/pdp-model.js"></script>
+		<script src="src/app/pdp/pdp-controller.js"></script>
+		<script src="src/app/pdp/item-details/pdp-item-details.js"></script>
+		<script src="src/app/pdp/item-reviews/pdp-item-reviews.js"></script>
+		<script src="src/app/pdp/item-hero/pdp-item-hero.js"></script>
+		<script src="src/app/helper-directives/helpers.js"></script>
+		<script src="src/app/helper-directives/carousel/carousel.js"></script>
+
+	</body>
+</html>

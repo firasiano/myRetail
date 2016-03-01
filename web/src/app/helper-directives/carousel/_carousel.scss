@@ -1,0 +1,51 @@
+
+.mr-carousel {
+
+}
+
+.mr-carousel_selected-image {
+	cursor: -webkit-zoom-in;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.mr-carousel_link {
+	width: 32px;
+	font-size: 32px;
+	text-decoration: blink;
+}
+
+.mr-carousel_link:hover {
+	text-decoration: none;
+}
+
+.mr-carousel_link-prev {
+
+}
+
+.mr-carousel_link-next {
+	
+}
+
+.mr-carousel_slider {
+	text-align: center;
+}
+
+.mr-carousel_slider-images {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.mr-carousel_thumb {
+	height: 60px;
+    width: 60px;
+    cursor: pointer;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.mr-carousel_thumb--selected {
+	border: 1x solid yellow;
+}

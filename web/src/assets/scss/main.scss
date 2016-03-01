@@ -1,0 +1,22 @@
+
+@import "bootstrap";
+@import "colors";
+@import "buttons";
+@import "typography";
+@import "modules/shared/footer";
+@import "modules/shared/header";
+@import "constants";
+@import "modules/home";
+@import "custom-implementation";
+@import "../../app/helper-directives/carousel/carousel";
+@import "../../app/pdp/pdp";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footerHeight;
+}

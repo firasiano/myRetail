@@ -1,0 +1,36 @@
+
+<section class="mr-pdp-reviews">
+	<div class="row mr-pdp-reviews_title">
+		<div class="col-xs-6"> 
+			<p class="pull-left text--important">{{vm.productReviews[0].Con[0].RatableAttributes[0].value}} stars</p>
+		</div>
+		<div class="col-xs-6"> 
+			<a class="pull-right text--important">View all {{vm.productReviews[0].Con.length + vm.productReviews[0].Pro.length}} reviews</a>
+		</div>
+	</div>
+	<div class="row mr-pdp-reviews_content">
+		<div class="col-xs-6">
+			<div class="mr-pdp-reviews_review-title">
+				<h4>PRO</h4>
+				<small>most helpfule 4-5 star review</small>
+			</div>
+			<div>
+				<p class="text--important">{{vm.productReviews[0].Pro[0].RatableAttributes[0].value}} stars</p>
+				<p>{{vm.productReviews[0].Pro[0].title}}</p>
+				<p>{{vm.productReviews[0].Pro[0].review}}</p>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div class="mr-pdp-reviews_review-title">
+				<h4 class="mr-pdp-reviews_content-title">CON</h4>
+				<small>most helpfule 4-5 star review</small>
+			</div>
+			<div>
+				<p class="text--important">{{vm.productReviews[0].Con[0].RatableAttributes[1].value}} stars</p>
+				<p>{{vm.productReviews[0].Con[0].title}}</p>
+				<p>{{vm.productReviews[0].Con[0].review}}</p>
+			</div>
+
+		</div>
+	</div>
+</section>

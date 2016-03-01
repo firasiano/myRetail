@@ -1,0 +1,25 @@
+
+<section class="mr-carousel">
+
+	<img class="mr-carousel_selected-image" ng-src="{{vm.visibleImages[vm.selectedIndex].image}}" />
+	
+	<div class="mr-carousel_slider">
+		<a ng-disabled="vm.isFirstShowing()" ng-click="vm.moveBackward()" 
+		class="mr-carousel_link mr-carousel_link-prev">
+			<
+		</a>
+
+		<div class="mr-carousel_slider-images">
+			<i ng-repeat="image in vm.visibleImages" ng-style="{'background-image': 'url('+image.image+')'}" 
+				class="mr-carousel_thumb" ng-class="{'mr-carousel_thumb--selected': (vm.selectedIndex == $index)}"
+				ng-click="vm.selectedIndex=$index">
+			</i>
+		</div>
+
+		<a ng-disabled="vm.isLastShowing()" ng-click="vm.moveForward()" 
+		class="mr-carousel_link mr-carousel_link-next">
+			>
+		</a>
+	</div>
+	
+</section>

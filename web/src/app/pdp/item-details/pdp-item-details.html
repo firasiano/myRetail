@@ -1,0 +1,75 @@
+
+<div>
+	<!-- Offers Section -->
+	<section>
+		<span class="text--important">{{vm.productDetails.offers[0].OfferPrice[0].formattedPriceValue}}</span>
+		<span>{{vm.productDetails.offers[0].OfferPrice[0].priceQualifier}}</span>
+	</section>
+
+	<!-- Promotions Section -->
+	<section class="section_promotions"> 
+		<ui>
+			<li ng-repeat="promotion in vm.productDetails.promotions">
+				{{promotion.Description[0].shortDescription}}
+			</li>
+		</ui>
+	</section>
+
+	<!-- Quantity Section -->
+	<section class="row">
+		<div class="col-xs-6 quantity-control">
+			<span class="pull-left">Quantity</span>
+			<span class="pull-right">
+				<input ng-click="vm.changeQuantity(-1)" class="mr-button mr-button--fab" type="button" value="-"/>
+				<span>{{vm.model.quantity}}</span>
+				<input ng-click="vm.changeQuantity(+1)" class="mr-button mr-button--fab" type="button" value="+"/>
+			</span>
+		</div>
+	</section>
+	<!-- <h1>Availability</h1> -->
+
+	<!-- Adding Section -->
+	<section class="row">
+		<input class="col-xs-6 mr-button mr-button--colored" ng-if="vm.isAvailableForPickup()" 
+		type="button" value="PICK UP IN STORE" />
+		<input class="col-xs-6 mr-button mr-button--primary" ng-if="vm.isAvailableOnline()" 
+		type="button" value="ADD TO CART" />
+	</section>
+
+	<!-- Return Section -->
+	<section>
+		<div class="row">
+			<p class="col-xs-3 section-left_title">returns</p>
+			<p class="col-xs-9">
+				<small>
+				This item must be returned within 30 days of the ship date. See return policy for details.
+				</small>
+				<small>
+				Prices, promotions, styles and availability may vary by store and online.
+				</small>
+
+				<!-- ng-bind-html="vm.productDetails.returnPolicty[0].legalCopy | trustHtml"> -->
+			</p>
+		</div>
+	</section>
+
+	<!-- Adding Section -->
+	<section class="row">
+		<input class="col-xs-4 mr-button mr-button--minor" 
+		type="button" value="ADD TO REGISTRY" />
+
+		<input class="col-xs-4 mr-button mr-button--minor"
+		type="button" value="ADD TO LIST" />
+
+		<input class="col-xs-4 mr-button mr-button--minor" 
+		type="button" value="SHARE" />
+	</section>
+
+	<!-- Heighlights section -->
+	<section>
+		<ul>
+			<li ng-repeat="feature in vm.productDetails.heighlights[0].features" ng-bind-html="feature | trustHtml">
+			</li>
+		</ul>
+	</section>
+</div>

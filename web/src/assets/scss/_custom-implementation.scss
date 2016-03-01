@@ -1,0 +1,19 @@
+
+a {
+	color: $link-color;
+	&:hover {
+		color: $link-hover-color;
+	}
+}
+
+.btn-default {
+	background: $btn-default-bg;
+	color: $btn-default-color;
+}
+
+a[disabled] {
+    color: #AAAAAA;
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
+}
